@@ -1,0 +1,24 @@
+1. Customer Table
+INSERT INTO Customer (customer_id, name, email, phone) VALUES
+(1, 'Mohammad Hammad', 'hammad@example.com', '9876543210'),
+(2, 'Ayesha Khan', 'ayesha.khan@example.com', '9998887777'),
+(3, 'Rahul Verma', 'rahul.verma@example.com', '8887776666');
+2. Product Table
+INSERT INTO Product (product_id, name, description, price, stock_quantity) VALUES
+(101, 'Laptop', '15-inch, 16GB RAM, 512GB SSD', 65000.00, 10),
+(102, 'Wireless Mouse', 'Ergonomic design, USB receiver', 800.00, 50),
+(103, 'Keyboard', 'Mechanical, RGB backlit', 2500.00, 30);
+3. Orders Table
+INSERT INTO Orders (order_id, customer_id, order_date, total_amount) VALUES
+(1001, 1, '2025-06-20', 67800.00),
+(1002, 2, '2025-06-21', 3300.00);
+4. OrderItem Table
+INSERT INTO OrderItem (order_item_id, order_id, product_id, quantity, price) VALUES
+(1, 1001, 101, 1, 65000.00),
+(2, 1001, 102, 1, 800.00),
+(3, 1002, 103, 1, 2500.00),
+(4, 1002, 102, 1, 800.00);
+5. Payment Table
+INSERT INTO Payment (payment_id, order_id, payment_date, amount, payment_method) VALUES
+(201, 1001, '2025-06-20', 67800.00, 'Credit Card'),
+(202, 1002, '2025-06-21', 3300.00, 'UPI');
