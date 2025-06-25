@@ -1,0 +1,10 @@
+UPDATE Product
+SET stock_quantity = stock_quantity + 20
+WHERE product_id = 101;
+
+UPDATE Customer
+SET phone = '9123456789'
+WHERE customer_id = 3;
+
+DELETE FROM Orders
+WHERE order_id = 1002;
